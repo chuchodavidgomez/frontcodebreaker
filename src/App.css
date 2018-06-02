@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(148, 20, 127);
   height: 150px;
   padding: 20px;
   color: white;
@@ -16,6 +16,19 @@
 
 .App-title {
   font-size: 1.5em;
+}
+.App-title1 {
+  font-size: 2.5em;
+}
+
+.palabra{
+  font-size: 1.5em;
+  color:rgb(148, 20, 127);
+}
+
+.btn{
+  color:rgb(148, 20, 127);
+  background-color: rgba(148, 20, 127, 0.103);
 }
 
 .App-intro {

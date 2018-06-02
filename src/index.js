@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
+import { label } from 'reactstrap';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

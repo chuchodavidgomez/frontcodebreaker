@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './front.css';
+import './App.css';
 
 class front extends Component {
 
@@ -63,30 +64,40 @@ class front extends Component {
 
     render() {
         return (
-        <div className="front">
-            <div className = "integrantes">
-                <label className="nombre" type="text">
-                    Jesús David Gómez Osorno
-                </label>                
+        <div className="front">            
+            <br></br>
+            <div className="palabra">
+                <div>
+                    <label>
+                        Cambiar secret  
+                    </label>
+                </div>
+                <div>  
+                    <input className="numero" type="text" onChange={this.submitChange}/>                
+                </div>
+                <br></br>
+                <div>   
+                    <button type="submit" className="btn" onClick={this.handleSubmitChange}>Cambiar</button>                
+                </div>                
             </div>
-            <div className = "integrantes">                
-                <label className="nombre" type="text">
-                    Sebatián Montoya Jimenéz
-                </label>
+            <div className = "palabra">
+                <br></br>
+                <div>
+                    <label>
+                        Número 
+                    </label>
+                </div>
+                <div>  
+                    <input className="numero" type="text" onChange={this.submitCheck}/>               
+                </div>
+                <br></br>
+                <div>   
+                    <button type="submit" className="btn" onClick={this.handleSubmitCheck}>Verificar</button>
+                </div>
+                                
             </div>
-            <div className = "changeNumber">
-                <label>Cambiar secret:  
-                    <input className="numero" type="text" onChange={this.submitChange}/>
-                </label>
-                <button type="submit" className="btn" onClick={this.handleSubmitChange}>Cambiar</button>
-            </div>
-            <div className = "checkNumber">
-                <label>Número:  
-                    <input className="numero" type="text" onChange={this.submitCheck}/>
-                </label>
-                <button type="submit" className="btn" onClick={this.handleSubmitCheck}>Verificar</button>
-            </div>
-            <div className = "resultNumber">
+            <br></br>
+            <div className = "palabra">
                 <label className="resultado" id="resultado" type="text">
                     {this.state.numero}
                 </label>
